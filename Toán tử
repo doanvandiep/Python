@@ -1,0 +1,16 @@
+# a = 100
+# b = "200"
+# print(str(a)+b)
+# print(a+int(b))
+
+a = input("nhap vao so a: ")
+a = int(a)
+b = input("nhap vao so b: ")
+b = int(b)
+print("{0}+{1}={2}".format(a,b,a+b))
+print("{0}-{1}={2}".format(a,b,a-b))
+print("{0}*{1}={2}".format(a,b,a*b))
+print("{0}/{1}={2}".format(a,b,a/b))
+print("{0}//{1}={2}".format(a,b,a//b))
+print("{0}%{1}={2}".format(a,b,a%b))
+print("{0}**{1}={2}".format(a,b,a**b))
