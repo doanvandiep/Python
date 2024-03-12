@@ -1,0 +1,7 @@
+n = list(map(int, input().split()))
+
+a = n[1]//n[0]
+b = n[1]/n[0]
+
+print(a)
+print("%.2f"%b)
