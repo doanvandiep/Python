@@ -1,0 +1,9 @@
+if __name__ == "__main__":
+    n = int(input())
+    tong = 1
+    tich = 1
+    for i in range(1,n):
+        tich = tich * i
+        tong += 1/tich
+
+    print("%.4f" % tong)
