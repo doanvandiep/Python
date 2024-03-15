@@ -1,0 +1,11 @@
+if __name__ == "__main__":
+    n = int(input())
+    x = list(map(int, input().split()))
+    tong = 0
+    for i in range(len(x)):
+        if x[i] % 2 == 0:
+            tong += x[i]
+
+    print(tong)
+
+    
