@@ -1,0 +1,11 @@
+if __name__ == "__main__":
+    a, b, n = map(int, input().split())
+    min_val = min(a, b)
+    
+    for i in range(0, n // min_val + 1):
+        remaining = n - (b * i)
+        if remaining >= 0 and remaining % a == 0:
+            print("YES")
+            break
+    else:
+        print("NO")
