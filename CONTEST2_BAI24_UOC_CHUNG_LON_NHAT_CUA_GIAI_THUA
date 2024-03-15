@@ -1,0 +1,10 @@
+from math import *
+def giai_thua(n):
+    if n == 0:
+        return 1
+    else:
+        return n*giai_thua(n-1)
+if __name__ == "__main__":
+    a, b = map(int, input().split())
+    n = min(a, b)
+    print(giai_thua(n))
