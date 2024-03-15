@@ -1,0 +1,13 @@
+def tong_chu_so(n):
+    tong = 0
+    for i in range (len(n)):
+        tong += int(n[i])
+    return tong
+if __name__ == "__main__":
+    n = input()
+
+    while True:
+        n = str(tong_chu_so(n))
+        if(len(n)==1):
+            break
+    print(n)
