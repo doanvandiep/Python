@@ -21,7 +21,9 @@ if __name__ == "__main__":
     s = ""
     for key, value in x:
         s += str(key) + "^" + str(value) + " * "
-    print(s[:-3]) // lấy các phần tử trong s trừ 3 phần tử cuối
+    print(s[:-3]) # lấy các phần tử trong s trừ 3 phần tử cuối
+#s[m:n] trong Python được gọi là "slicing"
+
 
 
         
