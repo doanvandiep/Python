@@ -1,0 +1,27 @@
+from math import *
+
+if __name__ == "__main__":
+    n = int(input())
+    count = 0
+    x= []
+    while n%2 ==0:
+        count += 1
+        n //= 2
+    if count > 0:
+        x.append((2, count)) 
+    for i in range(3, int(sqrt(n))+1, 2):
+        count = 0
+        while n%i == 0:
+            count += 1
+            n //= i
+        if count > 0:
+            x.append((i, count))
+    if n > 2:
+        x.append((n, 1))
+    s = ""
+    for key, value in x:
+        s += str(key) + "^" + str(value) + " * "
+    print(s[:-3]) // lấy các phần tử trong s trừ 3 phần tử cuối
+
+
+        
