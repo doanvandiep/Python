@@ -1,0 +1,16 @@
+from math import *
+
+def tong_uoc_so(n):
+    tong = 1
+    i = 2
+    while i*i <=n:
+        if n%i == 0:
+            if i != n/i:
+                tong += i + n/i
+            else:
+                tong += i  
+        i += 1
+    return int(tong+n)
+if __name__ == "__main__":
+    n = int(input())
+    print(tong_uoc_so(n))
