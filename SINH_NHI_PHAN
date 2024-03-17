@@ -1,0 +1,19 @@
+from math import *
+
+n = None
+
+a = [0] * 16
+def check():
+    for i in range(n):
+        print(a[i],end="")
+    print()
+def Try(i):
+    for j in range(0,2):
+        a[i]=j
+        if i==n-1:
+            check()
+        else:
+            Try(i+1)
+if __name__ == "__main__":
+    n = int(input())
+    Try(0)
