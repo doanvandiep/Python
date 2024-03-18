@@ -1,0 +1,14 @@
+from math import *
+
+def so_loc_phat(n):
+    for i in range (len(n)):
+        if n[i]!='0' and n[i] != '6' and n[i]!='8':
+            return False
+    return True
+
+if __name__ == "__main__":
+    n = input()
+    if so_loc_phat(n):
+        print(1)
+    else:
+        print(0)
