@@ -1,0 +1,11 @@
+from math import *
+
+
+if __name__ == "__main__":
+    n = int(input())
+    b = n%11
+    a = n - b*111
+    if a>0 and a%11==0:
+        print("YES")
+    else:
+        print("NO")
