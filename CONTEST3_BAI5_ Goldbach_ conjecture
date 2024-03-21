@@ -1,0 +1,19 @@
+from math import *
+
+def nguyen_to_2(n):
+    if n < 1:
+        return False
+    for i in range(2, isqrt(n)+1):
+        if n%i == 0:
+            return False
+    return True
+
+if __name__ == "__main__":
+    t = int(input())
+    while t > 0:
+        n = int(input())
+        for i in range (2, n//2 + 1):
+            if nguyen_to_2(i) and nguyen_to_2(n-i):
+                print(i, n-i, sep=" ")
+        t -= 1
+    
